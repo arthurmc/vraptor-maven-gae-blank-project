@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="vraptor-gae">
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/resources"/>
+        <property name="context-root" value="vraptor-gae"/>
+        <property name="java-output-path" value="/vraptor-gae/target/vraptor-gae-0.0.1-SNAPSHOT/WEB-INF/classes"/>
+    </wb-module>
+</project-modules>
