@@ -1,5 +1,5 @@
-#Tue Feb 01 14:23:37 BRST 2011
+#Wed Feb 02 17:23:47 BRST 2011
 eclipse.preferences.version=1
 jarsExcludedFromWebInfLib=
-warSrcDir=target/vraptor-gae-0.0.1-SNAPSHOT
+warSrcDir=target/vraptor-maven-gae-blank-project-0.0.1-SNAPSHOT
 warSrcDirIsOutput=true

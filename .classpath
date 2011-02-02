@@ -109,5 +109,5 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
-	<classpathentry kind="output" path="target/vraptor-gae-0.0.1-SNAPSHOT/WEB-INF/classes"/>
+	<classpathentry kind="output" path="target/vraptor-maven-gae-blank-project-0.0.1-SNAPSHOT/WEB-INF/classes"/>
 </classpath>

@@ -6,6 +6,6 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/resources"/>
         <property name="context-root" value="vraptor-gae"/>
-        <property name="java-output-path" value="/vraptor-gae/target/vraptor-gae-0.0.1-SNAPSHOT/WEB-INF/classes"/>
+        <property name="java-output-path" value="/vraptor-maven-gae-blank-project/target/vraptor-maven-gae-blank-project-0.0.1-SNAPSHOT/WEB-INF/classes"/>
     </wb-module>
 </project-modules>
