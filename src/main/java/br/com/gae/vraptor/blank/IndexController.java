@@ -1,20 +1,9 @@
-/***
- * Copyright (c) 2009 Caelum - www.caelum.com.br/opensource
- * All rights reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); 
- * you may not use this file except in compliance with the License. 
- * You may obtain a copy of the License at 
- * 
- * 	http://www.apache.org/licenses/LICENSE-2.0 
- * 
- * Unless required by applicable law or agreed to in writing, software 
- * distributed under the License is distributed on an "AS IS" BASIS, 
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
- * See the License for the specific language governing permissions and 
- * limitations under the License. 
- */
 package br.com.gae.vraptor.blank;
+
+import java.util.Date;
+import java.util.List;
+
+import javax.jdo.PersistenceManager;
 
 import br.com.caelum.vraptor.Path;
 import br.com.caelum.vraptor.Resource;
@@ -24,6 +13,19 @@ public class IndexController {
 
 	@Path("/")
 	public void index() {
+        PersistenceManager pm = PMF.get().getPersistenceManager();
+
+        Employee employee = new Employee("Alfred", "Smith", new Date());
+        
+        try {
+            pm.makePersistent(employee);
+        } finally {
+            pm.close();
+        }
+        
+        pm = PMF.get().getPersistenceManager();
+        
+        String query = "select from " + Employee.class.getName() + " where lastName == 'Smith'";
+        List<Employee> employees = (List<Employee>) pm.newQuery(query).execute();
 	}
-	
 }
