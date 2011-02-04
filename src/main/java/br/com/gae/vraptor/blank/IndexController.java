@@ -12,7 +12,7 @@ import br.com.caelum.vraptor.Resource;
 public class IndexController {
 
 	@Path("/")
-	public void index() {
+	public List<Employee> index() {
         PersistenceManager pm = PMF.get().getPersistenceManager();
 
         Employee employee = new Employee("Alfred", "Smith", new Date());
@@ -27,5 +27,7 @@ public class IndexController {
         
         String query = "select from " + Employee.class.getName() + " where lastName == 'Smith'";
         List<Employee> employees = (List<Employee>) pm.newQuery(query).execute();
+        
+        return employees;
 	}
 }
